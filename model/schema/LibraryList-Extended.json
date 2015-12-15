@@ -1,0 +1,671 @@
+{
+    "Tables": {
+        "User": {
+            "TableName": "User",
+            "Columns": [
+                {
+                    "Column": "IDUser",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDUser",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "NameFirst",
+                    "DataType": "String",
+                    "Size": "48"
+                },
+                {
+                    "Column": "NameLast",
+                    "DataType": "String",
+                    "Size": "48"
+                },
+                {
+                    "Column": "Title",
+                    "DataType": "String",
+                    "Size": "32"
+                },
+                {
+                    "Column": "Email",
+                    "DataType": "String",
+                    "Size": "128"
+                },
+                {
+                    "Column": "LoginID",
+                    "DataType": "String",
+                    "Size": "96"
+                },
+                {
+                    "Column": "LoginPassword",
+                    "DataType": "String",
+                    "Size": "148"
+                },
+                {
+                    "Column": "PasswordResetKey",
+                    "DataType": "String",
+                    "Size": "32"
+                },
+                {
+                    "Column": "IDRole",
+                    "DataType": "Numeric",
+                    "Join": "IDRole"
+                },
+                {
+                    "Column": "Contractor",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "IDCustomer",
+                    "DataType": "Numeric",
+                    "Join": "IDCustomer"
+                }
+            ]
+        },
+        "Role": {
+            "TableName": "Role",
+            "Columns": [
+                {
+                    "Column": "IDRole",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDRole",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Name",
+                    "DataType": "String",
+                    "Size": "32"
+                },
+                {
+                    "Column": "PermissionLevel",
+                    "DataType": "String",
+                    "Size": "16"
+                }
+            ]
+        },
+        "Customer": {
+            "TableName": "Customer",
+            "Columns": [
+                {
+                    "Column": "IDCustomer",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDCustomer",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Name",
+                    "DataType": "String",
+                    "Size": "128"
+                },
+                {
+                    "Column": "Code",
+                    "DataType": "String",
+                    "Size": "24"
+                },
+                {
+                    "Column": "Enabled",
+                    "DataType": "Boolean"
+                }
+            ]
+        }
+    },
+    "TablesSequence": [
+        "User",
+        "Role",
+        "Customer"
+    ],
+    "Authorization": {
+        "User": {
+            "__DefaultAPISecurity": {
+                "Create": "Deny",
+                "Read": "Deny",
+                "Reads": "Deny",
+                "ReadsBy": "Deny",
+                "ReadMax": "Deny",
+                "ReadSelectList": "Deny",
+                "Update": "Deny",
+                "Delete": "Deny",
+                "Count": "Deny",
+                "CountBy": "Deny",
+                "Schema": "Deny",
+                "Validate": "Deny",
+                "New": "Deny"
+            },
+            "Unauthenticated": {
+                "Create": "Deny",
+                "Read": "Deny",
+                "Reads": "Deny",
+                "ReadsBy": "Deny",
+                "ReadMax": "Deny",
+                "ReadSelectList": "Deny",
+                "Update": "Deny",
+                "Delete": "Deny",
+                "Count": "Deny",
+                "CountBy": "Deny",
+                "Schema": "Deny",
+                "Validate": "Deny",
+                "New": "Deny"
+            },
+            "User": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "Mine",
+                "Delete": "Mine",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Manager": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "Mine",
+                "Delete": "Mine",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Director": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "MyCustomer",
+                "Delete": "MyCustomer",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Executive": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "MyCustomer",
+                "Delete": "MyCustomer",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Administrator": {
+                "Create": "Allow",
+                "Read": "Allow",
+                "Reads": "Allow",
+                "ReadsBy": "Allow",
+                "ReadMax": "Allow",
+                "ReadSelectList": "Allow",
+                "Update": "Allow",
+                "Delete": "Allow",
+                "Count": "Allow",
+                "CountBy": "Allow",
+                "Schema": "Allow",
+                "Validate": "Allow",
+                "New": "Allow"
+            }
+        },
+        "Role": {
+            "__DefaultAPISecurity": {
+                "Create": "Deny",
+                "Read": "Deny",
+                "Reads": "Deny",
+                "ReadsBy": "Deny",
+                "ReadMax": "Deny",
+                "ReadSelectList": "Deny",
+                "Update": "Deny",
+                "Delete": "Deny",
+                "Count": "Deny",
+                "CountBy": "Deny",
+                "Schema": "Deny",
+                "Validate": "Deny",
+                "New": "Deny"
+            },
+            "Unauthenticated": {
+                "Create": "Deny",
+                "Read": "Deny",
+                "Reads": "Deny",
+                "ReadsBy": "Deny",
+                "ReadMax": "Deny",
+                "ReadSelectList": "Deny",
+                "Update": "Deny",
+                "Delete": "Deny",
+                "Count": "Deny",
+                "CountBy": "Deny",
+                "Schema": "Deny",
+                "Validate": "Deny",
+                "New": "Deny"
+            },
+            "User": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "Mine",
+                "Delete": "Mine",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Manager": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "Mine",
+                "Delete": "Mine",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Director": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "MyCustomer",
+                "Delete": "MyCustomer",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Executive": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "MyCustomer",
+                "Delete": "MyCustomer",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Administrator": {
+                "Create": "Allow",
+                "Read": "Allow",
+                "Reads": "Allow",
+                "ReadsBy": "Allow",
+                "ReadMax": "Allow",
+                "ReadSelectList": "Allow",
+                "Update": "Allow",
+                "Delete": "Allow",
+                "Count": "Allow",
+                "CountBy": "Allow",
+                "Schema": "Allow",
+                "Validate": "Allow",
+                "New": "Allow"
+            }
+        },
+        "Customer": {
+            "__DefaultAPISecurity": {
+                "Create": "Deny",
+                "Read": "Deny",
+                "Reads": "Deny",
+                "ReadsBy": "Deny",
+                "ReadMax": "Deny",
+                "ReadSelectList": "Deny",
+                "Update": "Deny",
+                "Delete": "Deny",
+                "Count": "Deny",
+                "CountBy": "Deny",
+                "Schema": "Deny",
+                "Validate": "Deny",
+                "New": "Deny"
+            },
+            "Unauthenticated": {
+                "Create": "Deny",
+                "Read": "Deny",
+                "Reads": "Deny",
+                "ReadsBy": "Deny",
+                "ReadMax": "Deny",
+                "ReadSelectList": "Deny",
+                "Update": "Deny",
+                "Delete": "Deny",
+                "Count": "Deny",
+                "CountBy": "Deny",
+                "Schema": "Deny",
+                "Validate": "Deny",
+                "New": "Deny"
+            },
+            "User": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "Mine",
+                "Delete": "Mine",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Manager": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "Mine",
+                "Delete": "Mine",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Director": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "MyCustomer",
+                "Delete": "MyCustomer",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Executive": {
+                "Create": "Allow",
+                "Read": "MyCustomer",
+                "Reads": "MyCustomer",
+                "ReadsBy": "MyCustomer",
+                "ReadMax": "MyCustomer",
+                "ReadSelectList": "MyCustomer",
+                "Update": "MyCustomer",
+                "Delete": "MyCustomer",
+                "Count": "MyCustomer",
+                "CountBy": "MyCustomer",
+                "Schema": "MyCustomer",
+                "Validate": "MyCustomer",
+                "New": "MyCustomer"
+            },
+            "Administrator": {
+                "Create": "Allow",
+                "Read": "Allow",
+                "Reads": "Allow",
+                "ReadsBy": "Allow",
+                "ReadMax": "Allow",
+                "ReadSelectList": "Allow",
+                "Update": "Allow",
+                "Delete": "Allow",
+                "Count": "Allow",
+                "CountBy": "Allow",
+                "Schema": "Allow",
+                "Validate": "Allow",
+                "New": "Allow"
+            }
+        }
+    },
+    "Endpoints": {
+        "Create": true,
+        "Read": true,
+        "Reads": true,
+        "ReadsBy": true,
+        "ReadMax": true,
+        "ReadSelectList": true,
+        "Update": true,
+        "Delete": true,
+        "Count": true,
+        "CountBy": true,
+        "Schema": true,
+        "Validate": true,
+        "New": true
+    },
+    "Pict": {
+        "User": {
+            "Create": {
+                "Enabled": true,
+                "Title": "Create a <%= EntityName %>"
+            },
+            "Read": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    }
+                }
+            },
+            "ReadList": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    },
+                    "CreateDate": {
+                        "Type": "Date-Relative"
+                    }
+                }
+            },
+            "Update": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    }
+                }
+            },
+            "Delete": {
+                "Enabled": true,
+                "Validation": true,
+                "DisplayRecord": true,
+                "ConfirmationMessage": "Are you sure you want to delete this record with ID XXXXX?"
+            }
+        },
+        "Role": {
+            "Create": {
+                "Enabled": true,
+                "Title": "Create a <%= EntityName %>"
+            },
+            "Read": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    }
+                }
+            },
+            "ReadList": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    },
+                    "CreateDate": {
+                        "Type": "Date-Relative"
+                    }
+                }
+            },
+            "Update": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    }
+                }
+            },
+            "Delete": {
+                "Enabled": true,
+                "Validation": true,
+                "DisplayRecord": true,
+                "ConfirmationMessage": "Are you sure you want to delete this record with ID XXXXX?"
+            }
+        },
+        "Customer": {
+            "Create": {
+                "Enabled": true,
+                "Title": "Create a <%= EntityName %>"
+            },
+            "Read": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    }
+                }
+            },
+            "ReadList": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    },
+                    "CreateDate": {
+                        "Type": "Date-Relative"
+                    }
+                }
+            },
+            "Update": {
+                "Enabled": true,
+                "Columns": {
+                    "Name": {
+                        "Type": "Text"
+                    }
+                }
+            },
+            "Delete": {
+                "Enabled": true,
+                "Validation": true,
+                "DisplayRecord": true,
+                "ConfirmationMessage": "Are you sure you want to delete this record with ID XXXXX?"
+            }
+        }
+    }
+}

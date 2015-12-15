@@ -1,0 +1,48 @@
+!User
+@IDUser
+%GUIDUser
+&CreateDate
+#CreatingIDUser -> IDUser
+&UpdateDate
+#UpdatingIDUser -> IDUser
+^Deleted
+&DeleteDate
+#DeletingIDUser -> IDUser
+$NameFirst 48
+$NameLast 48
+$Title 32
+$Email 128
+$LoginID 96
+$LoginPassword 148
+$PasswordResetKey 32
+#IDRole -> IDRole
+^Contractor
+#IDCustomer -> IDCustomer
+
+!Role
+@IDRole
+%GUIDRole
+&CreateDate
+#CreatingIDUser -> IDUser
+&UpdateDate
+#UpdatingIDUser -> IDUser
+^Deleted
+&DeleteDate
+#DeletingIDUser -> IDUser
+$Name 32
+$PermissionLevel 16
+
+!Customer
+@IDCustomer
+%GUIDCustomer
+&CreateDate
+#CreatingIDUser -> IDUser
+&UpdateDate
+#UpdatingIDUser -> IDUser
+^Deleted
+&DeleteDate
+#DeletingIDUser -> IDUser
+$Name 128
+$Code 24
+^Enabled
+

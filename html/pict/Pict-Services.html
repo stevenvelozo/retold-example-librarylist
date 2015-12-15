@@ -1,0 +1,74 @@
+<!-- PICT MetaTemplate: Table Wrapper and Controls -->
+<script type="text/html" id="Pict_Meta_Table">
+    <div class="pictListRecordControls">
+        <a href="#<%= Meta.DataOperations.Config.DataSetHash %>create" class="btn btn-default pictRecordCreateLink" role="button"><i class="fa fa-plus"></i><span> New</span></a>
+    </div>
+    <div id="RowsPagingTop_<%= Meta.DataOperations.Config.DataSetHash %>" class="pictListPagingControls pictListPagingControlsContainer"></div>
+    <div class="clearfix"></div>
+    <div class="pictListWell">
+        <table class="table table-striped pictHoverTable">
+            <thead>
+                <tr class="pictHoverIgnore">
+                    <th class="pictHoverRowControls"></th>
+                </tr>
+            </thead>
+            <tbody class="pictRecordRows" id="ContainerRows_<%= Meta.DataOperations.Config.DataSetHash %>">
+            </tbody>
+        </table>
+    </div>
+    <div class="pictListRecordControls"></div>
+    <div class="pictListPagingControls pictListPagingControlsContainer" id="RowsPagingBottom_<%= Meta.DataOperations.Config.DataSetHash %>"></div>
+</script>
+
+<!-- Pict MetaTemplate: Table Row -->
+<script type="text/html" id="Pict_Meta_Rows">
+    <%
+    for (var i = 0; i < Records.length; i++)
+    {
+    %>
+        <tr class="pictHoverRow" RecordSource="Customer" GUIDRecord="<%= Records[i].IDCustomer %>">
+            <td><%= Records[i].Name %></td>
+            <td class="pictHoverTableRightCell hidden-xs hidden-sm hidden-md"><%= Pict.dates.FormatDateDelta(Records[i].CreateDate) %></td>
+            <td class="pictHoverTableRightCell pictMenuList">
+                <div class="dropdown">
+                    <button class="btn btn-default btn-sm dropdown-toggle fade pictHoverTableRowControl" type="button" id="dropdownMenu<%= Records[i].IDCustomer %>" data-toggle="dropdown"><i class="fa fa-fw fa-ellipsis-h"></i></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu<%= Records[i].IDCustomer %>">
+                        <li role="presentation"><a role="menuitem" class="pictListViewLink" tabindex="-1" href="#Customerread/<%= Records[i].IDCustomer %>"><span class="pictMI"><i class="fa fa-fw fa-file-text-o"></i></span> View</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#Customerduplicate/<%= Records[i].IDCustomer %>"><span class="pictMI"><i class="fa fa-fw fa-copy"></i></span> Duplicate</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#Customeredit/<%= Records[i].IDCustomer %>"><span class="pictMI"><i class="fa fa-fw fa-edit"></i></span> Edit</a></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    <%
+    }
+    %>
+</script>
+
+<!-- Pict MetaTemplate: Read Record -->
+<script type="text/html" id="Pict_Meta_Read">
+	<h1 id="TitleText">Record</h1>
+</script>
+
+<!-- Pict MetaTemplate: Record Data Rendering -->
+<script type="text/html" id="Pict_Meta_RecordRender">
+	<h2>Record Data</h2>
+</script>
+
+<!-- Pict MetaTemplate: Record Common Information Rendering -->
+<script type="text/html" id="Pict_Meta_RecordCommonDataRender">
+	<h2>Details</h2>
+</script>
+
+<!-- Pict MetaTemplate: Update Record -->
+<script type="text/html" id="Pict_Meta_Update">
+	<h1 id="TitleText">Update Record</h1>
+</script>
+
+<!-- Pict MetaTemplate: Delete Confirmation and Delete -->
+<script type="text/html" id="Pict_Meta_Delete">
+	<h1 id="TitleText">Confirm Deletion of Record</h1>
+</script>
+<script type="text/html" id="Pict_Meta_DeleteCompleted">
+    <h1 id="TitleText">Successfully Deleted</h1>
+</script>

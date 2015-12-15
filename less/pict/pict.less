@@ -1,0 +1,29 @@
+// Cesar's fix does not really fix the issue.  Discuss later.
+.pictRecordRows
+{
+    tr
+    {
+        &:hover
+        {
+            background-color: orange;
+            td, 
+            & > td 
+            {
+                background-color: transparent;
+            }
+        }
+    }
+    tr:nth-child(odd)
+    {
+        background: #f9f9f9;
+        &:hover
+        {
+            background-color: orange;
+            td, 
+            & > td 
+            {
+                background-color: transparent;
+            }
+        }
+    }
+}

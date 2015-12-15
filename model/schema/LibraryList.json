@@ -1,0 +1,209 @@
+{
+    "Tables": {
+        "User": {
+            "TableName": "User",
+            "Columns": [
+                {
+                    "Column": "IDUser",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDUser",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "NameFirst",
+                    "DataType": "String",
+                    "Size": "48"
+                },
+                {
+                    "Column": "NameLast",
+                    "DataType": "String",
+                    "Size": "48"
+                },
+                {
+                    "Column": "Title",
+                    "DataType": "String",
+                    "Size": "32"
+                },
+                {
+                    "Column": "Email",
+                    "DataType": "String",
+                    "Size": "128"
+                },
+                {
+                    "Column": "LoginID",
+                    "DataType": "String",
+                    "Size": "96"
+                },
+                {
+                    "Column": "LoginPassword",
+                    "DataType": "String",
+                    "Size": "148"
+                },
+                {
+                    "Column": "PasswordResetKey",
+                    "DataType": "String",
+                    "Size": "32"
+                },
+                {
+                    "Column": "IDRole",
+                    "DataType": "Numeric",
+                    "Join": "IDRole"
+                },
+                {
+                    "Column": "Contractor",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "IDCustomer",
+                    "DataType": "Numeric",
+                    "Join": "IDCustomer"
+                }
+            ]
+        },
+        "Role": {
+            "TableName": "Role",
+            "Columns": [
+                {
+                    "Column": "IDRole",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDRole",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Name",
+                    "DataType": "String",
+                    "Size": "32"
+                },
+                {
+                    "Column": "PermissionLevel",
+                    "DataType": "String",
+                    "Size": "16"
+                }
+            ]
+        },
+        "Customer": {
+            "TableName": "Customer",
+            "Columns": [
+                {
+                    "Column": "IDCustomer",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDCustomer",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Name",
+                    "DataType": "String",
+                    "Size": "128"
+                },
+                {
+                    "Column": "Code",
+                    "DataType": "String",
+                    "Size": "24"
+                },
+                {
+                    "Column": "Enabled",
+                    "DataType": "Boolean"
+                }
+            ]
+        }
+    }
+}

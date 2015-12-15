@@ -1,0 +1,32 @@
+{
+  "name": "retold-example-librarylist",
+  "description": "Retold Sample Application",
+  "main": "server/LibraryList.js",
+  "authors": [
+    "Steven Velozo <steven@velozo.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "sample"
+  ],
+  "homepage": "https://github.com/stevenvelozo/retold-example-librarylist",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "requirejs": "~2.1.22",
+    "async": "~1.5.0",
+    "underscore": "~1.8.3"
+  }
+}

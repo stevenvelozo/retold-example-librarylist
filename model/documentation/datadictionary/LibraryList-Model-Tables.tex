@@ -1,0 +1,65 @@
+%% Data Model -- Generated 2015-12-13T06:07:16.446Z
+\part{Table Definitions}
+
+\section{User}
+\begin{small}
+\begin{tabular}{ p{5cm} p{1cm} p{3cm}  p{3.75cm} }
+\textbf{Column Name} & \textbf{Size} & \textbf{Data Type} & \textbf{Join} \\ \hline 
+IDUser &  & ID &  \\ 
+GUIDUser &  & GUID &  \\ 
+CreateDate &  & DateTime &  \\ 
+CreatingIDUser &  & Numeric & User.IDUser \\ 
+UpdateDate &  & DateTime &  \\ 
+UpdatingIDUser &  & Numeric & User.IDUser \\ 
+Deleted &  & Boolean &  \\ 
+DeleteDate &  & DateTime &  \\ 
+DeletingIDUser &  & Numeric & User.IDUser \\ 
+NameFirst & 48 & String &  \\ 
+NameLast & 48 & String &  \\ 
+Title & 32 & String &  \\ 
+Email & 128 & String &  \\ 
+LoginID & 96 & String &  \\ 
+LoginPassword & 148 & String &  \\ 
+PasswordResetKey & 32 & String &  \\ 
+IDRole &  & Numeric & Role.IDRole \\ 
+Contractor &  & Boolean &  \\ 
+IDCustomer &  & Numeric & Customer.IDCustomer \\ 
+\end{tabular}
+\end{small}
+
+\section{Role}
+\begin{small}
+\begin{tabular}{ p{5cm} p{1cm} p{3cm}  p{3.75cm} }
+\textbf{Column Name} & \textbf{Size} & \textbf{Data Type} & \textbf{Join} \\ \hline 
+IDRole &  & ID &  \\ 
+GUIDRole &  & GUID &  \\ 
+CreateDate &  & DateTime &  \\ 
+CreatingIDUser &  & Numeric & User.IDUser \\ 
+UpdateDate &  & DateTime &  \\ 
+UpdatingIDUser &  & Numeric & User.IDUser \\ 
+Deleted &  & Boolean &  \\ 
+DeleteDate &  & DateTime &  \\ 
+DeletingIDUser &  & Numeric & User.IDUser \\ 
+Name & 32 & String &  \\ 
+PermissionLevel & 16 & String &  \\ 
+\end{tabular}
+\end{small}
+
+\section{Customer}
+\begin{small}
+\begin{tabular}{ p{5cm} p{1cm} p{3cm}  p{3.75cm} }
+\textbf{Column Name} & \textbf{Size} & \textbf{Data Type} & \textbf{Join} \\ \hline 
+IDCustomer &  & ID &  \\ 
+GUIDCustomer &  & GUID &  \\ 
+CreateDate &  & DateTime &  \\ 
+CreatingIDUser &  & Numeric & User.IDUser \\ 
+UpdateDate &  & DateTime &  \\ 
+UpdatingIDUser &  & Numeric & User.IDUser \\ 
+Deleted &  & Boolean &  \\ 
+DeleteDate &  & DateTime &  \\ 
+DeletingIDUser &  & Numeric & User.IDUser \\ 
+Name & 128 & String &  \\ 
+Code & 24 & String &  \\ 
+Enabled &  & Boolean &  \\ 
+\end{tabular}
+\end{small}

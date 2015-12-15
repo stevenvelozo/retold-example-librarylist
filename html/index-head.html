@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- build:instrumentation -->
+INSTRUMENTATIONCODE
+<!-- endbuild -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Library List">
+    <meta name="author" content="Steven Velozo">
+    <link rel="icon" href="images/favicon.ico?v=2">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Retold Library List</title>
+    <link href="css/theme.css" rel="stylesheet">
+
+    <!-- build:livereload -->
+    <script src="http://LIVERELOADSERVERADDRESS:LIVERELOADSERVERPORT/livereload.js?snipver=1"></script>
+    <!-- endbuild -->
+</head>
+
+<body role="document" class="login">
+    <div id="wrapper">
+        <header class="container main-header">
+            <h5>Retold Library List Example</h5>
+        </header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="navbar-brand"></span>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <!-- Dynamic Menu Contents  -->
+                    <ul id="main-nav" class="nav navbar-nav"></ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fullUserName">John Doe</span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation" class="dropdown-header">Release VERSION</li>
+                                <li><a href="" id="headerLogout">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container " role="main">
+            <!-- Main View -->
+            <div id="appContentContainer">
+                <div class="container">
+                    <h1>Some content</h1>
+                </div>
+            </div>
+            <!-- /CONTAINER-CONTENT -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /#wrapper -->
+
+    <script type="text/javascript">
+        // Added here to support BugzID 51 -- all ajax operations being odd in ie due to console.log being undefined when dev tools are closed
+        if (typeof(console) === 'undefined')
+            window.console = { log: function() {} };
+    </script>
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/async.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <!-- UI & UX Libraries -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- /UI & UX Libraries -->
+
+    <!-- Reporting Libraries -->
+    <!-- /Reporting Libraries -->
+
+    <script type="text/javascript" src="js/backbone.js"></script>
+    <!-- RequireJS also launches the scripts/application for us. -->
+    <script type="text/javascript" data-main="scripts/Application" src="dependencies/js/require.js"></script>
+    <script>
+        require.config(
+            {
+                urlArgs: 'rev=0007',
+                paths:
+                {
+                    async: 'pict/dependencies/async',
+                    underscore: 'pict/dependencies/underscore'
+                }
+            }
+        );
+    </script>
+    <!-- /SCRIPTS -->
+    <!-- TEMPLATES -->

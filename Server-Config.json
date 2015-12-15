@@ -1,0 +1,31 @@
+{
+	"APIServerPort": 8080,
+
+	"UUID":
+		{
+			"DataCenter": 0,
+			"Worker": 0
+		},
+
+	"LogStreams":
+		[
+			{ "level":"trace", "streamtype":"process.stdout" },
+			{ "type":"rotating-file", "period":"4h", "level":"trace", "path":"./Logs/Retold.log" }
+		],
+
+	"SessionStrategy":"memcached",
+	"SessionTimeout":9000,
+	"MemcachedURL":"192.168.99.100:11211",
+
+	"SolrURL":"http://192.168.99.100:8983/",
+
+	"MySQL":
+		{
+			"Server": "192.168.99.100",
+			"Port": 3306,
+			"User": "admin",
+			"Password": "verysecurepassword",
+			"Database": "librarylist",
+			"ConnectionPoolLimit": 20
+		}
+}
