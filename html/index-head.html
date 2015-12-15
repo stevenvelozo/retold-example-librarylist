@@ -16,7 +16,7 @@ INSTRUMENTATIONCODE
     <link href="css/theme.css" rel="stylesheet">
 
     <!-- build:livereload -->
-    <script src="http://LIVERELOADSERVERADDRESS:LIVERELOADSERVERPORT/livereload.js?snipver=1"></script>
+    <!-- <script src="http://LIVERELOADSERVERADDRESS:LIVERELOADSERVERPORT/livereload.js?snipver=1"></script> -->
     <!-- endbuild -->
 </head>
 
@@ -39,8 +39,12 @@ INSTRUMENTATIONCODE
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <!-- Dynamic Menu Contents  -->
-                    <ul id="main-nav" class="nav navbar-nav"></ul>
+                    <ul id="main-nav" class="nav navbar-nav">
+                        <li><a href="#Customerlist">Customers</a></li>
+                        <li><a href="#Userlist">Users</a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
+
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle pull-right" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fullUserName">John Doe</span> <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -78,6 +82,7 @@ INSTRUMENTATIONCODE
 
     <!-- UI & UX Libraries -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/mousetrap.js"></script>
     <!-- /UI & UX Libraries -->
 
     <!-- Reporting Libraries -->
@@ -85,7 +90,7 @@ INSTRUMENTATIONCODE
 
     <script type="text/javascript" src="js/backbone.js"></script>
     <!-- RequireJS also launches the scripts/application for us. -->
-    <script type="text/javascript" data-main="scripts/Application" src="dependencies/js/require.js"></script>
+    <script type="text/javascript" data-main="scripts/Application" src="js/require.js"></script>
     <script>
         require.config(
             {

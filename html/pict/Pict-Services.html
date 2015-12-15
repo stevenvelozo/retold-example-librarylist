@@ -22,27 +22,7 @@
 
 <!-- Pict MetaTemplate: Table Row -->
 <script type="text/html" id="Pict_Meta_Rows">
-    <%
-    for (var i = 0; i < Records.length; i++)
-    {
-    %>
-        <tr class="pictHoverRow" RecordSource="Customer" GUIDRecord="<%= Records[i].IDCustomer %>">
-            <td><%= Records[i].Name %></td>
-            <td class="pictHoverTableRightCell hidden-xs hidden-sm hidden-md"><%= Pict.dates.FormatDateDelta(Records[i].CreateDate) %></td>
-            <td class="pictHoverTableRightCell pictMenuList">
-                <div class="dropdown">
-                    <button class="btn btn-default btn-sm dropdown-toggle fade pictHoverTableRowControl" type="button" id="dropdownMenu<%= Records[i].IDCustomer %>" data-toggle="dropdown"><i class="fa fa-fw fa-ellipsis-h"></i></button>
-                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu<%= Records[i].IDCustomer %>">
-                        <li role="presentation"><a role="menuitem" class="pictListViewLink" tabindex="-1" href="#Customerread/<%= Records[i].IDCustomer %>"><span class="pictMI"><i class="fa fa-fw fa-file-text-o"></i></span> View</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#Customerduplicate/<%= Records[i].IDCustomer %>"><span class="pictMI"><i class="fa fa-fw fa-copy"></i></span> Duplicate</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#Customeredit/<%= Records[i].IDCustomer %>"><span class="pictMI"><i class="fa fa-fw fa-edit"></i></span> Edit</a></li>
-                    </ul>
-                </div>
-            </td>
-        </tr>
-    <%
-    }
-    %>
+
 </script>
 
 <!-- Pict MetaTemplate: Read Record -->

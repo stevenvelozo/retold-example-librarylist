@@ -14,27 +14,24 @@ define
 	["pict/Pict",
 		// The application-specific bundles
 		// The services that are expected to run by the app
-		//'BundleUsers', 
+		'BundleUsers', 
 		'BundleSession'],
 	function(Pict,
-		//BundleUsers, 
+		BundleUsers, 
 		BundleSession)
 	{
 		// Instantiate the Pict framework
 		var _Pict = Pict;
 		// Set the site prefix
-		_Pict.sitePrefix = 'Pict';
+		_Pict.sitePrefix = 'Retold LibraryList';
 		// Initialize the router
 		_Pict.routermanagement.Initialize(_Pict);
 
 		// ## Wire Up Bundles
-		//var _Users = BundleUsers.New(_Pict.router, _Pict);
+		var _Users = BundleUsers.New(_Pict.router, _Pict);
 
 		// Configure Security
 		var _Session = BundleSession.New(_Pict.router, _Pict);
-
-		// Now check if the user is logged in or not.  Pict will set the ux state properly.
-		_Pict.session.ValidateAuthenticated();
 
 		// Now set the default route... this could branch by user type easily.
 		var defaultRoute = function()
@@ -55,6 +52,7 @@ define
 			"route",
 			function(pRoute, pParameters)
 			{
+				console.log('Showing route: '+pRoute)
 				// Close any open modals that are registered to autoclose
 				var tmpAutoCloseModals = _AutoCloseModals;
 				_AutoCloseModals = [];
@@ -73,6 +71,9 @@ define
 				}
 			}
 		);
+
+		// Now check if the user is logged in or not.  Pict will set the ux state properly.
+		_Pict.session.ValidateAuthenticated();
 
 		var oApplication = ({});
 	}
