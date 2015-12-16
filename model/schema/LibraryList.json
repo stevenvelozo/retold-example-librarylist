@@ -204,6 +204,69 @@
                     "DataType": "Boolean"
                 }
             ]
+        },
+        "Book": {
+            "TableName": "Book",
+            "Columns": [
+                {
+                    "Column": "IDBook",
+                    "DataType": "ID"
+                },
+                {
+                    "Column": "GUIDBook",
+                    "DataType": "GUID"
+                },
+                {
+                    "Column": "CreateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "CreatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "UpdateDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "UpdatingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Deleted",
+                    "DataType": "Boolean"
+                },
+                {
+                    "Column": "DeleteDate",
+                    "DataType": "DateTime"
+                },
+                {
+                    "Column": "DeletingIDUser",
+                    "DataType": "Numeric",
+                    "Join": "IDUser"
+                },
+                {
+                    "Column": "Title",
+                    "DataType": "String",
+                    "Size": "200"
+                },
+                {
+                    "Column": "Author",
+                    "DataType": "String",
+                    "Size": "150"
+                },
+                {
+                    "Column": "ISBN",
+                    "DataType": "String",
+                    "Size": "48"
+                },
+                {
+                    "Column": "Year",
+                    "DataType": "Numeric"
+                }
+            ]
         }
     }
 }

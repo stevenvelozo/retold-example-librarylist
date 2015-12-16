@@ -1,10 +1,11 @@
--- Data Model -- Generated 2015-12-13T06:07:15.173Z
+-- Data Model -- Generated 2015-12-16T13:29:57.507Z
 
 -- This script creates the following tables:
 -- Table ----------------------------------------- Column Count ----------------
 --   User                                                   19
 --   Role                                                   11
 --   Customer                                               12
+--   Book                                                   13
 
 
 
@@ -76,4 +77,27 @@ CREATE TABLE IF NOT EXISTS
         Enabled TINYINT NOT NULL DEFAULT '0',
 
         PRIMARY KEY (IDCustomer)
+    );
+
+
+
+--   [ Book ]
+CREATE TABLE IF NOT EXISTS
+    Book
+    (
+        IDBook INT UNSIGNED NOT NULL AUTO_INCREMENT,
+        GUIDBook CHAR(36) NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
+        CreateDate DATETIME,
+        CreatingIDUser INT NOT NULL DEFAULT '0',
+        UpdateDate DATETIME,
+        UpdatingIDUser INT NOT NULL DEFAULT '0',
+        Deleted TINYINT NOT NULL DEFAULT '0',
+        DeleteDate DATETIME,
+        DeletingIDUser INT NOT NULL DEFAULT '0',
+        Title CHAR(200) NOT NULL DEFAULT '',
+        Author CHAR(150) NOT NULL DEFAULT '',
+        ISBN CHAR(48) NOT NULL DEFAULT '',
+        Year INT NOT NULL DEFAULT '0',
+
+        PRIMARY KEY (IDBook)
     );

@@ -103,6 +103,9 @@ _UserEndpoints.connectRoutes(libOrator.webServer);
 var _CustomerEndpoints = libOrator.fable.Retold.DALMacros.getMeadowEndpoints('Customer');
 _CustomerEndpoints.connectRoutes(libOrator.webServer);
 
+var _BookEndpoints = libOrator.fable.Retold.DALMacros.getMeadowEndpoints('Book');
+_BookEndpoints.connectRoutes(libOrator.webServer);
+
 // Map the staged web site to a static server on all other root requests
 libOrator.addStaticRoute(__dirname+'/../stage/');
 

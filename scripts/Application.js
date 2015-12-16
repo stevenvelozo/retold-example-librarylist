@@ -28,7 +28,13 @@ define
 		_Pict.routermanagement.Initialize(_Pict);
 
 		// ## Wire Up Bundles
-		var _Users = BundleUsers.New(_Pict.router, _Pict);
+		var _Books = require('pict/record/controller/Pict-RecordController')('Book');
+		// Eventually manage this through stricture
+		_Books.Config.AddMetaRowColumn({Column:'Title'});
+		_Books.Config.AddMetaRowColumn({Column:'Author'});
+		_Books.Config.AddMetaRowColumn({Column:'Year'});
+		_Books.Config.AddMetaRowColumn({Column:'CreateDate', Title: 'Created', Hash: 'DateDelta'});
+		_Books.Initialize(_Pict.router);
 
 		// Configure Security
 		var _Session = BundleSession.New(_Pict.router, _Pict);

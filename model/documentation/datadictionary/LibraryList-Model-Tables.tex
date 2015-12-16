@@ -1,4 +1,4 @@
-%% Data Model -- Generated 2015-12-13T06:07:16.446Z
+%% Data Model -- Generated 2015-12-16T13:29:58.789Z
 \part{Table Definitions}
 
 \section{User}
@@ -61,5 +61,25 @@ DeletingIDUser &  & Numeric & User.IDUser \\
 Name & 128 & String &  \\ 
 Code & 24 & String &  \\ 
 Enabled &  & Boolean &  \\ 
+\end{tabular}
+\end{small}
+
+\section{Book}
+\begin{small}
+\begin{tabular}{ p{5cm} p{1cm} p{3cm}  p{3.75cm} }
+\textbf{Column Name} & \textbf{Size} & \textbf{Data Type} & \textbf{Join} \\ \hline 
+IDBook &  & ID &  \\ 
+GUIDBook &  & GUID &  \\ 
+CreateDate &  & DateTime &  \\ 
+CreatingIDUser &  & Numeric & User.IDUser \\ 
+UpdateDate &  & DateTime &  \\ 
+UpdatingIDUser &  & Numeric & User.IDUser \\ 
+Deleted &  & Boolean &  \\ 
+DeleteDate &  & DateTime &  \\ 
+DeletingIDUser &  & Numeric & User.IDUser \\ 
+Title & 200 & String &  \\ 
+Author & 150 & String &  \\ 
+ISBN & 48 & String &  \\ 
+Year &  & Numeric &  \\ 
 \end{tabular}
 \end{small}

@@ -1,7 +1,7 @@
 [
     {
-        "IDRole": 0,
-        "GUIDRole": "0x546abeea42400000",
+        "IDBook": 0,
+        "GUIDBook": "0x546abeea42c00019",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -9,12 +9,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 1,
-        "GUIDRole": "0x546abeea42400001",
+        "IDBook": 1,
+        "GUIDBook": "0x546abeea42c0001a",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -22,12 +24,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 2,
-        "GUIDRole": "0x546abeea42400002",
+        "IDBook": 2,
+        "GUIDBook": "0x546abeea42c0001b",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -35,12 +39,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 3,
-        "GUIDRole": "0x546abeea42400003",
+        "IDBook": 3,
+        "GUIDBook": "0x546abeea42c0001c",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -48,12 +54,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 4,
-        "GUIDRole": "0x546abeea42400004",
+        "IDBook": 4,
+        "GUIDBook": "0x546abeea42c0001d",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -61,12 +69,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 5,
-        "GUIDRole": "0x546abeea42400005",
+        "IDBook": 5,
+        "GUIDBook": "0x546abeea42c0001e",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -74,12 +84,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 6,
-        "GUIDRole": "0x546abeea42400006",
+        "IDBook": 6,
+        "GUIDBook": "0x546abeea42c0001f",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -87,12 +99,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 7,
-        "GUIDRole": "0x546abeea42400007",
+        "IDBook": 7,
+        "GUIDBook": "0x546abeea42c00020",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -100,12 +114,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 8,
-        "GUIDRole": "0x546abeea42400008",
+        "IDBook": 8,
+        "GUIDBook": "0x546abeea42c00021",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -113,12 +129,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 9,
-        "GUIDRole": "0x546abeea42400009",
+        "IDBook": 9,
+        "GUIDBook": "0x546abeea42c00022",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -126,12 +144,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 10,
-        "GUIDRole": "0x546abeea4240000a",
+        "IDBook": 10,
+        "GUIDBook": "0x546abeea42c00023",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -139,12 +159,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 11,
-        "GUIDRole": "0x546abeea4240000b",
+        "IDBook": 11,
+        "GUIDBook": "0x546abeea43000000",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -152,12 +174,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 12,
-        "GUIDRole": "0x546abeea4240000c",
+        "IDBook": 12,
+        "GUIDBook": "0x546abeea43000001",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -165,12 +189,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 13,
-        "GUIDRole": "0x546abeea4240000d",
+        "IDBook": 13,
+        "GUIDBook": "0x546abeea43000002",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -178,12 +204,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 14,
-        "GUIDRole": "0x546abeea4240000e",
+        "IDBook": 14,
+        "GUIDBook": "0x546abeea43000003",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -191,12 +219,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 15,
-        "GUIDRole": "0x546abeea4240000f",
+        "IDBook": 15,
+        "GUIDBook": "0x546abeea43000004",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -204,12 +234,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 16,
-        "GUIDRole": "0x546abeea42400010",
+        "IDBook": 16,
+        "GUIDBook": "0x546abeea43000005",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -217,12 +249,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 17,
-        "GUIDRole": "0x546abeea42400011",
+        "IDBook": 17,
+        "GUIDBook": "0x546abeea43000006",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -230,12 +264,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 18,
-        "GUIDRole": "0x546abeea42400012",
+        "IDBook": 18,
+        "GUIDBook": "0x546abeea43000007",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -243,12 +279,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 19,
-        "GUIDRole": "0x546abeea42800000",
+        "IDBook": 19,
+        "GUIDBook": "0x546abeea43000008",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -256,12 +294,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 20,
-        "GUIDRole": "0x546abeea42800001",
+        "IDBook": 20,
+        "GUIDBook": "0x546abeea43000009",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -269,12 +309,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 21,
-        "GUIDRole": "0x546abeea42800002",
+        "IDBook": 21,
+        "GUIDBook": "0x546abeea4300000a",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -282,12 +324,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 22,
-        "GUIDRole": "0x546abeea42800003",
+        "IDBook": 22,
+        "GUIDBook": "0x546abeea4300000b",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -295,12 +339,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 23,
-        "GUIDRole": "0x546abeea42800004",
+        "IDBook": 23,
+        "GUIDBook": "0x546abeea4300000c",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -308,12 +354,14 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     },
     {
-        "IDRole": 24,
-        "GUIDRole": "0x546abeea42800005",
+        "IDBook": 24,
+        "GUIDBook": "0x546abeea4300000d",
         "CreateDate": null,
         "CreatingIDUser": 0,
         "UpdateDate": null,
@@ -321,7 +369,9 @@
         "Deleted": false,
         "DeleteDate": null,
         "DeletingIDUser": 0,
-        "Name": "",
-        "PermissionLevel": ""
+        "Title": "",
+        "Author": "",
+        "ISBN": "",
+        "Year": 0
     }
 ]

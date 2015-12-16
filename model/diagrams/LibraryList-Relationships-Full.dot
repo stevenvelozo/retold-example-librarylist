@@ -1,9 +1,10 @@
-## Table Connection Graph -- Generated 2015-12-13T06:07:15.722Z
+## Table Connection Graph -- Generated 2015-12-16T13:29:58.073Z
 digraph DataModel {
 rankdir=LR
 User;
 Role;
 Customer;
+Book;
 User -> User
 User -> User
 User -> User
@@ -15,4 +16,7 @@ Role -> User
 Customer -> User
 Customer -> User
 Customer -> User
+Book -> User
+Book -> User
+Book -> User
 }

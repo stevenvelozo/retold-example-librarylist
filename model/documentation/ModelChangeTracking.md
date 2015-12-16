@@ -10,6 +10,7 @@ Table | Create | Update | Delete
 User | X | X | X 
 Role | X | X | X 
 Customer | X | X | X 
+Book | X | X | X 
 - - -
 
-Generated on 2015-12-12 at 22:07
+Generated on 2015-12-16 at 08:29
