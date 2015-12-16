@@ -52,7 +52,6 @@ define
 			"route",
 			function(pRoute, pParameters)
 			{
-				console.log('Showing route: '+pRoute)
 				// Close any open modals that are registered to autoclose
 				var tmpAutoCloseModals = _AutoCloseModals;
 				_AutoCloseModals = [];

@@ -1,0 +1,12 @@
+<script type="text/html" id="Template_RowHeader">
+	<th><%= (typeof(Options.Title) === 'string') ? Options.Title : Options.Column %></th>
+</script>
+
+
+<script type="text/html" id="Template_RowData_Default">
+	<td><%= Record[Options.Column] %></td>
+</script>
+
+<script type="text/html" id="Template_RowData_DateDelta">
+    <td><%= Options.Pict.dates.FormatDateDelta(Record[Options.Column]) %></td>
+</script>

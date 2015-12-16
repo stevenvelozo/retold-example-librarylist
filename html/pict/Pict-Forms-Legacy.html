@@ -1,0 +1,160 @@
+<script type="text/html" id="Template_Field_Value_Input_textFirstFocus">
+	<div class="form-group">
+		<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+		<input type="text" class="form-control pictFirstFocus" id="<%= Field.FieldName %>" name="<%= Field.FieldName %>" value="<%= Field.Value %>" <%= Field.Required ? 'required' : '' %>>
+	</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_text">
+	<div class="form-group">
+		<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+		<input type="<%= Field.Type %>" class="form-control pictFirstFocus" id="<%= Field.FieldName %>" name="<%= Field.FieldName %>" value="<%= Field.Value %>" <%= Field.Required ? 'required' : '' %> >
+	</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_email">
+	<div class="form-group">
+		<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+		<input type="email" class="form-control pictFirstFocus" id="<%= Field.FieldName %>" name="<%= Field.FieldName %>" value="<%= Field.Value %>" <%= Field.Required ? 'required' : '' %> >
+	</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_Readonly_text">
+	<div class="form-group">
+		<label for="<%= Field.FieldName %>"><%= Field.Title %></label>
+		<input type="<%= Field.Type %>" class="form-control pictFirstFocus" id="<%= Field.FieldName %>" name="<%= Field.FieldName %>" value="<%= Field.Value %>" readonly="readonly">
+	</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_hidden">
+<input type="hidden" id="<%= Field.FieldName %>" name="<%= Field.FieldName %>" value="<%= Field.Value %>">
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_calendar">
+<%
+	var tmpDate = Pict.dates.FormatDateOnly( Field.Value, 'YYYY-MM-DD');
+	if (tmpDate == 'Invalid date') tmpDate = '';
+%>
+<div class="form-group">
+	<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+	<div class="input-group">
+		<div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+		<input type="text" class="form-control pictDatePicker" autocomplete="off" data-date-pickTime="false" data-date-format="YYYY-MM-DD" name="<%= Field.FieldName %>" id="<%= Field.FieldName %>" value="<%= tmpDate %>">
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_calendarandtime">
+<%
+	var tmpDate = Pict.dates.FormatDate( Field.Value, 'YYYY-MM-DD H:mm:ss');
+	if (tmpDate == 'Invalid date') tmpDate = '';
+%>
+<div class="form-group">
+	<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+	<div class="input-group">
+		<div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+		<input type="text" class="form-control pictDateTimePicker" autocomplete="off" data-date-format="YYYY-MM-DD H:mm:ss" data-date-sideBySide="true" name="<%= Field.FieldName %>" id="<%= Field.FieldName %>" value="<%= tmpDate %>">
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_selectcustom">
+<div class="form-group">
+	<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+	<div>
+		<input type="hidden" class="pictSelectCustom" name="<%= Field.FieldName %>" id="<%= Field.FieldName %>" value="<%= Field.Value %>">
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_selectcustomtags">
+<div class="form-group">
+	<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+	<div>
+		<input type="hidden" class="pictSelectCustom pictSelectCustomTags" name="<%= Field.FieldName %>" id="<%= Field.FieldName %>" value="<%= Field.Value %>">
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_select">
+	<div class="form-group">
+		<label for="<%= Field.FieldName %>" class="<%= Field.Required ? 'required-label' : '' %>"><%= Field.Title %></label>
+		<select name="<%= Field.FieldName %>" class="form-control" id="<%= Field.FieldName %>" currentvalue="<%= Field.Value %>">
+			<option value="0">None</option>
+		</div>
+	</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Input_checkbox">
+<%
+	var tmpChecked = '';
+
+	if (Field.Value == 1)
+		tmpChecked = 'checked="1"';
+%>
+<div class="checkbox">
+    <label>
+       <input class="pictAutoCheck" type="checkbox" id="CHECK_<%= Field.FieldName %>" name="CHECK_<%= Field.FieldName %>" <%= tmpChecked %>> <%= Field.Title %>
+    </label>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Display_text">
+<div class="dFROW">
+	<div class="dFID"><h5><%= Field.Title %></h5></div>
+	<div class="dFVAL">
+		<p
+		<%
+		if (Field.AutoFillRecordType)
+		{
+		%>
+		 class="<%= Field.AutoFillRecordType %>" RecordType="<%= Field.AutoFillRecordIDColumn %>" ID="<%= Field.AutoFillRecordID %>" DisplayField="<%= Field.AutoFillDisplayField %>" DisplayFieldExtra="<%= Field.AutoFillDisplayFieldExtra %>"
+		<%
+		}
+		%> >
+		<%= Field.Value %>
+	</p>
+	</div>
+</div>
+</script>
+
+
+<script type="text/html" id="Template_Field_Value_Display_hideempty">
+<div class="dFROW <% if ((typeof(Field.Value) === 'undefined') || (Field.Value === null) || (Field.Value === '')) { %>hidden<% } %>">
+	<div class="dFID"><h5><%= Field.Title %></h5></div>
+	<div class="dFVAL">
+		<p
+		<%
+			if (Field.AutoFillRecordType)
+			{
+		%>
+		 class="<%= Field.AutoFillRecordType %>" RecordType="<%= Field.AutoFillRecordIDColumn %>" ID="<%= Field.AutoFillRecordID %>" DisplayField="<%= Field.AutoFillDisplayField %>" DisplayFieldExtra="<%= Field.AutoFillDisplayFieldExtra %>"
+		<%
+			}
+		%> >
+		<%= Field.Value %>
+</p>
+	</div>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Display_check">
+<%
+	var tmpIcon = 'fa-square-o';
+
+	if (Field.Value == '1')
+		tmpIcon = 'fa-check-square-o';
+%>
+<div class="dFROW dFIR">
+	<div class="dFID"><h5><%= Field.Title %> <span class="dFII"><i class="fa <%= tmpIcon %> fa-lg"></i></span></h5></div>
+</div>
+</script>
+
+<script type="text/html" id="Template_Field_Value_Display_textBreakWords">
+<div class="dFROW">
+	<div class="dFID"><h5><%= Field.Title %></h5></div>
+	<div class="dFVAL">
+		<p class="pictBreakWords"><%= Field.Value %></p>
+	</div>
+</div>
+</script>

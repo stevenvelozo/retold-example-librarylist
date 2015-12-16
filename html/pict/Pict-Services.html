@@ -1,28 +1,74 @@
 <!-- PICT MetaTemplate: Table Wrapper and Controls -->
 <script type="text/html" id="Pict_Meta_Table">
     <div class="pictListRecordControls">
-        <a href="#<%= Meta.DataOperations.Config.DataSetHash %>create" class="btn btn-default pictRecordCreateLink" role="button"><i class="fa fa-plus"></i><span> New</span></a>
+        <a href="#MTS_HASH_MTEcreate" class="btn btn-default pictRecordCreateLink" role="button"><i class="fa fa-plus"></i><span> New</span></a>
     </div>
-    <div id="RowsPagingTop_<%= Meta.DataOperations.Config.DataSetHash %>" class="pictListPagingControls pictListPagingControlsContainer"></div>
+    <div id="RowsPagingTop_MTS_HASH_MTE" class="pictListPagingControls pictListPagingControlsContainer"></div>
     <div class="clearfix"></div>
     <div class="pictListWell">
         <table class="table table-striped pictHoverTable">
             <thead>
                 <tr class="pictHoverIgnore">
-                    <th class="pictHoverRowControls"></th>
+<%
+    // Parse the DataOperations row definitions
+    for (var tmpColumnDefinition in DAL.Config.MetaRowColumns)
+    {
+%>
+        <%= DAL.RecordTemplates.Parse('RowHeader', DAL.Config.MetaRowColumns[tmpColumnDefinition]) %>
+<%
+    }
+    if (DAL.Config.MetaRowMenu)
+    {
+%>
+        <th class="pictHoverRowControls"></th>
+<%
+    }
+%>
                 </tr>
             </thead>
-            <tbody class="pictRecordRows" id="ContainerRows_<%= Meta.DataOperations.Config.DataSetHash %>">
+            <tbody class="pictRecordRows" id="ContainerRows_MTS_HASH_MTE">
             </tbody>
         </table>
     </div>
     <div class="pictListRecordControls"></div>
-    <div class="pictListPagingControls pictListPagingControlsContainer" id="RowsPagingBottom_<%= Meta.DataOperations.Config.DataSetHash %>"></div>
+    <div class="pictListPagingControls pictListPagingControlsContainer" id="RowsPagingBottom_MTS_HASH_MTE"></div>
 </script>
 
 <!-- Pict MetaTemplate: Table Row -->
 <script type="text/html" id="Pict_Meta_Rows">
-
+<%
+    for (var i = 0; i < Records.length; i++)
+    {
+%>
+        <tr class="pictHoverRow" RecordSource="MTS_HASH_MTE" GUIDRecord="<%= Records[i].MTS_GUID_MTE %>">
+<%
+    // Parse the DataOperations row definitions
+    for (var tmpColumnDefinition in DAL.Config.MetaRowColumns)
+    {
+%>
+        <%= DAL.RecordTemplates.Parse('RowData', DAL.Config.MetaRowColumns[tmpColumnDefinition], Records[i]) %>
+<%
+    }
+    if (DAL.Config.MetaRowMenu)
+    {
+%>
+        <td class="pictHoverTableRightCell pictMenuList">
+            <div class="dropdown">
+                <button class="btn btn-default btn-sm dropdown-toggle fade pictHoverTableRowControl" type="button" id="dropdownMenuMTS_HASH_MTE<%= Records[i].MTS_GUID_MTE %>" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenuMTS_HASH_MTE<%= Records[i].MTS_GUID_MTE %>">
+                    <li role="presentation"><a role="menuitem" class="pictListViewLink" tabindex="-1" href="#MTS_HASH_MTEread/<%= Records[i].MTS_GUID_MTE %>"><span class="pictMI"><i class="fa fa-fw fa-file-text-o"></i></span> View</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#MTS_HASH_MTEduplicate/<%= Records[i].MTS_GUID_MTE %>"><span class="pictMI"><i class="fa fa-fw fa-copy"></i></span> Duplicate</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#MTS_HASH_MTEedit/<%= Records[i].MTS_GUID_MTE %>"><span class="pictMI"><i class="fa fa-fw fa-edit"></i></span> Edit</a></li>
+                </ul>
+            </div>
+        </td>
+<%
+    }
+%>
+        </tr>
+<%
+    }
+%>
 </script>
 
 <!-- Pict MetaTemplate: Read Record -->

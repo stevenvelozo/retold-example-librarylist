@@ -9,6 +9,8 @@ libSwill.addDependencyCopy({ Hash:'jquery', Output:'js/jquery.js', Input:'jquery
 libSwill.addDependencyCopy({ Hash:'require', Output:'js/require.js', Input:'requirejs/require.js'});
 libSwill.addDependencyCopy({ Hash:'underscore', Output:'js/underscore.js', Input:'underscore/underscore.min.js', InputDebug:'underscore/underscore.js'});
 libSwill.addDependencyCopy({ Hash:'mousetrap', Output:'js/mousetrap.js', Input:'mousetrap/mousetrap.min.js', InputDebug:'mousetrap/mousetrap.js'});
+libSwill.addDependencyCopy({ Hash:'moment', Output:'js/moment.js', Input:'moment/min/moment-with-locales.min.js', InputDebug:'moment/moment.js'});
+libSwill.addDependencyCopy({ Hash:'moment-timezone', Output:'js/moment-timezone.js', Input:'moment-timezone/builds/moment-timezone-with-data.min.js', InputDebug:'moment-timezone/moment-timezone.js'});
 
 // Copy the bootstrap fonts into the web root
 libSwill.addAssetCopy({Input:'bower_components/bootstrap/fonts/**/*.*', Output:'fonts/'});
