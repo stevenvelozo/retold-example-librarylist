@@ -49,7 +49,7 @@ define
 		loadMetaScripts();
 
 		var _Replace_HASH = /MTS_HASH_MTE/g;
-		var _Replace_GUID = /MTS_HASH_MTE/g;
+		var _Replace_GUID = /MTS_GUID_MTE/g;
 
 		var _Replace_ReadList_Title_Pre = /MTS_ReadList_Title_Pre_MTE/g;
 		var _Replace_ReadList_Title = /MTS_ReadList_Title_MTE/g;

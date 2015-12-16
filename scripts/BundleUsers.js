@@ -29,7 +29,7 @@ define
 			var _Customers = RecordController('Customer');
 			// Eventually manage this through stricture
 			_Customers.Config.AddMetaRowColumn({Column:'Name'});
-			_Customers.Config.AddMetaRowColumn({Column:'CreateDate', Hash: 'DateDelta'});
+			_Customers.Config.AddMetaRowColumn({Column:'CreateDate', Title: 'Created', Hash: 'DateDelta'});
 			_Customers.Initialize(pRouter);
 
 			var oBundleController = (
